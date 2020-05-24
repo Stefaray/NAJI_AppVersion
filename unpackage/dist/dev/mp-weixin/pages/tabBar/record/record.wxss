@@ -1,0 +1,14 @@
+
+.top_view{
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+/* 	padding: 60upx;
+	padding-left: 100upx; */
+}
+.uni_seg{
+	background-color: #E9F0F0;
+	color:#448088;
+	width: 500rpx;
+}
+

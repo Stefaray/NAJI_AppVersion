@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/tabBar/record/record",
+    "pages/tabBar/record/record",
+    "pages/tabBar/statistic/statistic",
+    "pages/tabBar/photo/photo",
+    "pages/tabBar/community/community",
+    "pages/tabBar/my/my"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F4F8F9",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#898989",
+    "selectedColor": "#448088",
+    "borderStyle": "black",
+    "backgroundColor": "#F4F8F9",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/record/record",
+        "iconPath": "static/record.png",
+        "selectedIconPath": "static/record_o.png",
+        "text": "记录"
+      },
+      {
+        "pagePath": "pages/tabBar/statistic/statistic",
+        "iconPath": "static/statistic.png",
+        "selectedIconPath": "static/statistic_o.png",
+        "text": "统计"
+      },
+      {
+        "pagePath": "pages/tabBar/photo/photo",
+        "iconPath": "static/photo.png",
+        "selectedIconPath": "static/photo_o.png",
+        "text": "揭照片"
+      },
+      {
+        "pagePath": "pages/tabBar/community/community",
+        "iconPath": "static/community.png",
+        "selectedIconPath": "static/community_o.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/tabBar/my/my",
+        "iconPath": "static/my.png",
+        "selectedIconPath": "static/my_o.png",
+        "text": "用户中心"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
