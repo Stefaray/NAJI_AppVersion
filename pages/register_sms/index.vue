@@ -111,6 +111,7 @@
 							title:res.data.desc
 						})
 						if(res.data.status==0){
+							uni.setStorageSync("token_user_id",res.data.user_id);
 							uni.switchTab({
 								url: "../tabBar/record/record"
 							});

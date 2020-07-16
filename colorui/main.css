@@ -882,7 +882,7 @@ button.cuIcon.lg {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	background-color: #ccc;
+	/* background-color: #ccc; */
 	color: #ffffff;
 	white-space: nowrap;
 	position: relative;

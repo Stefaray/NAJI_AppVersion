@@ -3,7 +3,7 @@
         <view class="top_view">
         	<view class="getSpace2"></view>
         	<view class="dayR_nav">
-        		<view class="dayR_back"><img src="/static/back.svg" class="svg_back"  /></view>
+        		<view class="dayR_back"><img src="/static/back.svg" class="svg_back" @tap="getNote" /></view>
         		<view  class="dayR_title"><text class="dayR_titleText">随手小记</text></view>
         	</view>
         </view>
@@ -68,7 +68,7 @@
 				<editor id="editor" class="ql-container" placeholder="开始输入..." showImgSize showImgToolbar showImgResize
 				 @statuschange="onStatusChange" :read-only="readOnly" @ready="onEditorReady">
 				</editor>
-				<view class="action text-green" bindtap="getContent">发表</view>
+				<!-- <view v-model="test" class="action text-green" @tap="getContent">{{test}}</view> -->
 
 			</view>
 			
@@ -78,24 +78,29 @@
 </template>
 
 <script>
+	
 	export default {
 		data() {
 			return {
                 readOnly: false,
-				formats: {}
+				formats: {},
+				initialHTML:'',
 			}
 		},
 		methods: {
-			getContent() {
-			  const that = this
-			  that.editorCtx.getContents({
-			    success: function (res) {   
-			    	console.log(res.detla)
-			    },
-			    fail: function (error){
-			    	console.log(error)
-			    }
-			})
+			
+			getNote() {
+				var tmp;
+				this.editorCtx.getContents({
+					success: function(res){
+						console.log(res.html)
+						tmp = res.html
+					}
+				}),
+				this.$store.commit("ChangeNote1",tmp)
+				uni.navigateBack({
+					delta: 1
+				});
 			},
 			readOnlyChange() {
 				this.readOnly = !this.readOnly
@@ -103,7 +108,10 @@
 			onEditorReady() {
 				uni.createSelectorQuery().select('#editor').context((res) => {
 					this.editorCtx = res.context
-				}).exec()
+				}).exec(),
+				this.editorCtx.setContents({
+					html: this.$store.state.note1
+				})
 			},
 			undo() {
 				this.editorCtx.undo()
@@ -124,6 +132,7 @@
 			onStatusChange(e) {
 				const formats = e.detail
 				this.formats = formats
+			
 			},
 			insertDivider() {
 				this.editorCtx.insertDivider({
@@ -165,11 +174,14 @@
 			}
 		},
 		onLoad() {
+			
 			uni.loadFontFace({
 				family: 'Pacifico',
 				source: 'url("https://sungd.github.io/Pacifico.ttf")'
 			})
+			
 		},
+	
 	}
 </script>
 

@@ -46,7 +46,9 @@
 			// changestatus(){
 			// 	this.status = 
 			// }
-			login(){
+			login(e){
+				// console.log(e.data)
+				// ---------------------------------
 				uni.request({
 					url:this.$url+'/user/login',
 					data:{
@@ -55,14 +57,15 @@
 					},
 					method:"GET",
 					success:(res) => {
-						console.log(res.data.user_id);
+						// console.log(res.data.user_id);
 						uni.showToast({
 							icon:"none",
 							title:res.data.desc
 						})
 						// console.log(res.data)
 						if(res.data.status==0){
-							uni.setStorageSync("uid",res.data.uid);
+							uni.setStorageSync("token_user_id",res.data.user_id);
+							// this.$store.commit("ChangeToken",res.data.uid);
 							uni.switchTab({
 								url: "../tabBar/record/record"
 							});
@@ -72,6 +75,7 @@
 						}
 					}
 				})
+				// -------------------------------------
 			}
 		},
 	}

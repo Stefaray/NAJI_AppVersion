@@ -43,6 +43,13 @@
 			}
 		},
 		{
+			"path": "pages/tabBar/photo/myCollection",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": "我的收藏品"
+			}
+		},
+		{
 			"path": "pages/tabBar/community/community",
 			"style": {
 				"navigationStyle":"custom",
@@ -83,8 +90,44 @@
 				"navigationStyle":"custom",
 				"navigationBarTitleText": "editor"
 			}
+		},
+		{
+		    "path" : "pages/editor/editor2",
+		    "style" : {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": "editor2"
+			}
 		}
        
+        ,{
+            "path" : "pages/tabBar/community/happyPopcorn/happyPopcorn",
+            "style" : {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": "快乐爆米花"
+			}
+        }
+		,{
+            "path" : "pages/tabBar/community/happyPopcorn/highLikeBoard",
+            "style" : {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": "高赞榜"
+			}
+        }
+        ,{
+            "path" : "pages/tabBar/community/moodBottle/moodBottle",
+            "style" : {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": "情绪漂流瓶"
+			}
+        }
+        ,{
+            "path" : "pages/tabBar/community/NAJIHouse/NAJIHouse",
+            "style" : {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": "纳己小木屋"
+			}
+        }
+        
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
