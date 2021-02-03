@@ -1,1 +1,1 @@
-<view></view>
+<view><view class="top_view"><view class="getSpace2"></view><view class="dayR_nav"><view class="dayR_title1" style="align-items:center;text-align:center;"><text class="shareExp">数据统计</text></view></view></view><view class="zanshi"><image class="a1" src="../../../static/statistic/1.png"></image><image class="a2" src="../../../static/statistic/2.png"></image><image class="a3" src="../../../static/statistic/3.png"></image></view></view>

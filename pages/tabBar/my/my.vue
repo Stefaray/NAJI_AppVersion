@@ -30,10 +30,10 @@
 		</view>
 		<view class="cutLine"></view>
 		
-		<view class="myMessage">
+		<navigator url="myMessage/myMessage" class="myMessage">
 			<view ><text class="myWord">我的消息</text></view>
 			<view class="rightRow2"><text class="rightRowWord"> > </text></view>
-		</view>
+		</navigator>
 		<view class="cutLine"></view>
 		
 		<view class="myPrivacy">

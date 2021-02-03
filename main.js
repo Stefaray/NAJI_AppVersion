@@ -2,8 +2,8 @@ import Vue from 'vue'
 import App from './App'
 
 Vue.config.productionTip = false
-Vue.prototype.$url = 'http://39.101.135.74:8000'
-Vue.prototype.$photoUrl = 'http://39.101.135.74:8000/static/photo/'
+Vue.prototype.$url = 'http://172.30.57.70:4444'
+Vue.prototype.$photoUrl = 'http://172.30.57.70:4444/static/photo/'
 App.mpType = 'app'
 
 Vue.prototype.$note1 = ''

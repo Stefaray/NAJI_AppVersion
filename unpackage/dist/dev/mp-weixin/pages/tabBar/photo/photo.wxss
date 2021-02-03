@@ -1,0 +1,83 @@
+
+.reUploadButton{
+	width: 140rpx;
+	height: 60rpx;
+	border: 3rpx #448088 solid;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
+	position: absolute;
+	bottom: 0rpx;
+	left: 520rpx;
+}
+.nonOpacity{
+	opacity:1
+}
+.opacity{			
+	opacity:0.1
+}
+.total{
+	width: 750rpx;
+	height: 1000rpx;
+	/* background-color: #1CBBB4; */
+	padding-top: 100rpx;
+}
+.piece{
+	width: 230rpx;
+	height: 230rpx;
+	background-color: #0066CC;
+	display: inline-block;
+	margin: 10rpx 10rpx;
+}
+.Text{
+	font:normal bold 34rpx "宋体",arial,sans-serif;
+	color: #448088;
+}
+.whole{
+	position: relative;
+	width: 750rpx;
+	height: 1200rpx;
+	/* text-align: center; */
+}
+.photoBar{
+	position: absolute;
+	width: 80rpx;
+	height: 80rpx;
+	bottom: 0rpx;
+	left: 420rpx;
+}
+.photoBox{
+	position: absolute;
+	width: 80rpx;
+	height: 80rpx;
+	bottom: 0rpx;
+	left: 50rpx;
+}
+.dayR_title1{
+	/* margin-left: 100upx; */
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	        flex: 3;
+}
+.shareExp{
+	font:normal bold 50rpx "微软雅黑",arial,sans-serif;
+	color: #448088;
+}
+.image {
+	width: 100%;
+}
+.demo {
+	margin: 100rpx auto;
+	width: 600rpx;
+	height: auto;
+	background: #dddddd;
+	padding: 30rpx;
+	border: dashed #448088 5rpx;
+	line-height: 400rpx;
+	text-align: center;
+}
+.content_text{
+	font:normal normal 34rpx "宋体",arial,sans-serif;
+	color: #448088;
+}
+
+

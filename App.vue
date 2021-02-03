@@ -147,6 +147,11 @@ export default {
 	font:normal normal 36upx "宋体",arial,sans-serif;
 	color: #dddddd;
 }
+/* 灰色字体 */
+.placeholderText1{
+	font:normal normal 33upx "宋体",arial,sans-serif;
+	color: #dddddd;
+}
 .placeholderTextGreen{
 	font:normal normal 30upx "宋体",arial,sans-serif;
 	color: #448088;

@@ -1,0 +1,297 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========colorUI引用开始================== */
+/* 头像 */
+.cu-avatar {
+	font-variant: small-caps;
+	margin: 0;
+	padding: 0;
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	text-align: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background-color: #ccc;
+	color: #ffffff;
+	white-space: nowrap;
+	position: relative;
+	width: 64rpx;
+	height: 64rpx;
+	background-size: cover;
+	background-position: center;
+	vertical-align: middle;
+	font-size: 1.5em;
+}
+.round {
+	-webkit-border-radius: 5000rpx;
+	        border-radius: 5000rpx;
+}
+.cu-avatar.lg {
+	width: 96rpx;
+	height: 96rpx;
+	font-size: 2em;
+}
+/* ===========colorUI引用结束================== */
+.highLikeNav{
+		width: 680rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		        flex-direction: row;
+		padding: 0 30rpx;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+}
+/* 高赞榜 */
+.highLike{
+		font:normal bold 50rpx "微软雅黑",arial,sans-serif;
+		color: #448088;
+}
+/* ============================切换按钮相关css开始====================================== */
+/* 切换按钮 */
+.switchButton{
+		-webkit-border-radius: 15rpx;
+		        border-radius: 15rpx;
+		border: #448088 solid 1rpx;
+		display:inline-block;
+		width: 250rpx;
+		height: 80rpx;
+		background-color: #ffffff;
+		line-height: 80rpx;
+}
+/* 切换按钮切换后的颜色 */
+.whiteBgc{
+		background-color: rgb(247,251,251);
+}
+/* ============================切换按钮相关css结束====================================== */
+/* ==================榜单元素css开始====================== */
+.highLikeElement{
+			padding: 10rpx;
+			height: 200rpx;
+			width: 750rpx;
+			/* background-color: #0066CC; */
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+}
+.highLikeAvatar{
+			
+			height: 100%;
+			-webkit-box-flex: 2;
+			-webkit-flex: 2;
+			        flex: 2;
+			/* background-color: #39B54A; */
+			padding : 30rpx 0 30rpx 30rpx;
+}
+.highLikeTitle{
+			padding-top: 20rpx;
+			padding-left: 20rpx;
+			-webkit-box-flex: 6;
+			-webkit-flex: 6;
+			        flex: 6;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-webkit-flex-direction: column;
+			        flex-direction: column;
+}
+.highLikeID{
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			        flex: 1;
+}
+.highLikeIDText{
+			font:normal bold 40rpx "微软雅黑",arial,sans-serif;
+			color: #448088;
+}
+.highLikeContent{
+			-webkit-box-flex: 3;
+			-webkit-flex: 3;
+			        flex: 3;
+}
+.highLikeContentText{
+			font:normal bold 30rpx "宋体",arial,sans-serif;
+			color: #448088;
+}
+.highLikeTime_Like{
+			-webkit-box-flex: 2;
+			-webkit-flex: 2;
+			        flex: 2;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-webkit-flex-direction: column;
+			        flex-direction: column;
+			-webkit-box-pack: justify;
+			-webkit-justify-content: space-between;
+			        justify-content: space-between;
+}
+.imag{
+			margin: 0rpx auto;
+			width: 90%;
+}
+.highLikeTitleText{
+			margin: 20rpx 0 30rpx 0;
+			font:normal bold 40rpx "微软雅黑",arial,sans-serif;
+			color: #000000;
+}
+.highLikeTimeText{
+			font:normal normal 30rpx "宋体",arial,sans-serif;
+			color: #448088;
+}
+/* ==================榜单元素css结束====================== */
+.highLikeTime_Like2{
+		position: relative;
+}
+/* 星星 */
+.talkStar{
+		width: 50rpx;
+		height: 50rpx;
+		position:absolute;     
+		right: 160rpx;
+		bottom: 10rpx;
+}
+.likeCount{
+		position:absolute;     
+		right: 70rpx;
+		bottom: 20rpx;
+		font:normal bold 30rpx "微软雅黑",arial,sans-serif;
+		color: #448088;
+}
+

@@ -1,6 +1,13 @@
 {
 	"pages": [
 		{
+			"path": "pages/tabBar/my/myMessage/myMessage",
+			"style": {
+				"navigationStyle":"custom",
+				"navigationBarTitleText": ""
+			}
+		},
+		{
 			"path": "pages/login/index",
 			"style": {
 				"navigationStyle":"custom",
@@ -62,8 +69,8 @@
 				"navigationStyle":"custom",
 				"navigationBarTitleText": "用户中心"
 			}
-		}
-	    ,{
+		},
+	    {
             "path" : "pages/tabBar/record/dayRemind/dayRemind",
             "style" : {
 				"navigationStyle":"custom",

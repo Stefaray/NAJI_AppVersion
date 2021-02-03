@@ -1,0 +1,75 @@
+
+.shareExp{
+		font:normal bold 50rpx "微软雅黑",arial,sans-serif;
+		color: #448088;
+}
+.commNav{
+		width: 680rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		        flex-direction: row;
+		padding: 0 30rpx;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+}
+	/* ==================榜单元素css开始====================== */
+.commElement{
+		padding: 10rpx;
+		height: 200rpx;
+		width: 750rpx;
+		/* background-color: #0066CC; */
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+}
+.commAvatar{
+		
+		height: 100%;
+		-webkit-box-flex: 3;
+		-webkit-flex: 3;
+		        flex: 3;
+		/* background-color: #39B54A; */
+		border: solid thin #dddddd;
+		-webkit-box-shadow: #dddddd;
+		        box-shadow: #dddddd;
+}
+.commTitle{
+		padding-top: 20rpx;
+		padding-left: 20rpx;
+		-webkit-box-flex: 5;
+		-webkit-flex: 5;
+		        flex: 5;
+}
+.commTime{
+		-webkit-box-flex: 2;
+		-webkit-flex: 2;
+		        flex: 2;
+}
+.imag{
+		margin: 0rpx auto;
+		width: 90%;
+}
+.commTitleText{
+		margin: 20rpx 0 30rpx 0;
+		font:normal bold 40rpx "微软雅黑",arial,sans-serif;
+		color: #000000;
+}
+.commTimeText{
+		font:normal normal 30rpx "宋体",arial,sans-serif;
+		color: #448088;
+}
+	/* ==================榜单元素css结束====================== */
+.comBottomBar{
+		width: 750rpx;
+		height: 100rpx;
+		background-color: rgb(245,249,250);
+		/* 固定在底部 */
+		position: fixed;
+		bottom: 0;
+}
+

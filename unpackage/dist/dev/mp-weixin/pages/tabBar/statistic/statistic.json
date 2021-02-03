@@ -1,4 +1,5 @@
 {
-  "navigationBarTitleText": "摇一摇",
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "统计",
   "usingComponents": {}
 }

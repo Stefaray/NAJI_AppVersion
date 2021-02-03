@@ -1,11 +1,24 @@
 {
   "pages": [
-    "pages/tabBar/record/record",
+    "pages/tabBar/my/myMessage/myMessage",
+    "pages/login/index",
+    "pages/register_pw/index",
+    "pages/register_sms/index",
     "pages/tabBar/record/record",
     "pages/tabBar/statistic/statistic",
     "pages/tabBar/photo/photo",
+    "pages/tabBar/photo/myCollection",
     "pages/tabBar/community/community",
-    "pages/tabBar/my/my"
+    "pages/tabBar/my/my",
+    "pages/tabBar/record/dayRemind/dayRemind",
+    "pages/tabBar/record/moodBoom/moodBoom",
+    "pages/login_sms/index",
+    "pages/editor/editor",
+    "pages/editor/editor2",
+    "pages/tabBar/community/happyPopcorn/happyPopcorn",
+    "pages/tabBar/community/happyPopcorn/highLikeBoard",
+    "pages/tabBar/community/moodBottle/moodBottle",
+    "pages/tabBar/community/NAJIHouse/NAJIHouse"
   ],
   "subPackages": [],
   "window": {
@@ -52,5 +65,7 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  }
 }

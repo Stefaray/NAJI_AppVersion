@@ -1,0 +1,106 @@
+
+.popcNav{
+		width: 680rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		        flex-direction: row;
+		padding: 0 30rpx;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+}
+.popcNav2{
+		padding-bottom: 30rpx;
+}
+.switchButton{
+		-webkit-border-radius: 15rpx;
+		        border-radius: 15rpx;
+		/* border: dashed rgb(238,241,234) ; */
+		/* margin-bottom: 100upx; */
+		display:inline-block;
+		width: 200rpx;
+		height: 80rpx;
+		background-color: rgb(235,241,242);
+}
+.getSpace3{
+		height: 100rpx;
+		text-align:center;
+}
+.whiteBgc{
+		background-color: #ffffff;
+}
+.popcBottomBar{
+		width: 750rpx;
+		height: 100rpx;
+		background-color: rgb(245,249,250);
+		position: fixed;
+		bottom: 0;
+		text-align: center;
+		line-height: 100rpx;
+		color: #448088;
+}
+.popcMachine{
+		/* display: flex; */
+		/* padding-left: 60upx; */
+		position: fixed;
+		bottom: 100rpx;
+		width: 750rpx;
+		text-align: center;
+		/* justify-content: space-between; */
+}
+	/* .popcMachineImage{
+		flex: 1;
+	} */
+.randomTalk{
+		margin: 50rpx auto;
+		width: 600rpx;
+		height: 350rpx;
+		background-color: rgb(253,255,232);
+		-webkit-box-shadow:-15px -15px 10px rgb(254,255,242) ;
+		        box-shadow:-15px -15px 10px rgb(254,255,242) ;
+		position:relative;  
+		   
+		/* 让文字自动换行 */
+		word-wrap:break-word;
+		word-break:break-all;
+}
+.talkStar{
+		
+		width: 60rpx;
+		height: 60rpx;
+		position:absolute;     
+		right: 10rpx;
+		bottom: 10rpx;
+}
+.talkEdit{
+		width: 60rpx;
+		height: 60rpx;
+		position:absolute;   
+		right: 10rpx;
+		top: 10rpx;
+}
+.talkSentenceView{
+		text-align: center;
+		padding-top: 80rpx;
+		margin: 0rpx 60rpx;
+
+		
+/* 		max-width: 480px;
+		word-wrap: break-word; */
+		
+	/* 	width:fit-content;
+		width:-webkit-fit-content;
+		width:-moz-fit-content; */
+		
+		
+		/* display:inline-block !important; */
+}
+.talkSentence{
+		font:normal bold 40rpx "宋体",arial,sans-serif;
+		color: #448088;
+}
+

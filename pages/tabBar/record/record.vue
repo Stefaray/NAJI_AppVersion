@@ -70,14 +70,16 @@
 
 				 		<view class="moodValue">
 							<view class="card_bottomImage0">
-								<image class="card_bottomImage1" :src='item.whichExpression' style="width: 89upx;height: 50upx; margin: 10upx 0 0 20upx;"></image>
+								<image class="card_bottomImage1" :src='item.whichExpression' style="width: 99upx;height: 50upx; margin: 10upx 0 0 20upx;"></image>
 								<view class="card_bottomImage2"><text class="expressionText">{{item.whichExpressionText}}</text></view>
 							</view>
 							<!-- <view class="card_bottomImage"><text class="expressionText">开心</text></view> -->
 				 			<view class="card_bottomTextView">
 				 				<view class="card_bottomText1"><text class="moodB_date">{{item.timeString}}</text></view>
 								<view class="card_bottomText2" style="margin-top: 10upx;">
-									<text class="moodB_content" v-html="item.moodNote"></text>
+									<!-- <text class="moodB_content" v-html="item.moodNote"></text> -->
+									<view v-html="formatStatus(item.moodNote)"></view>
+									<!-- <rich-text class="moodB_content">{{item.moodNote}}</rich-text> -->
 									<!-- <rich-text class="moodB_content" :nodes="item.moodNote"  ></rich-text> -->
 								</view>
 				 			</view>
@@ -118,7 +120,9 @@
 			 </view>
 			 <view class="popupBottom">
 				 <view class="noteContent">
-					 <text v-html="dayPopupContent.dayNote" class="placeholderText placeholderTexthide"></text>
+					 <!-- <text v-html="dayPopupContent.dayNote" class="placeholderText placeholderTexthide"></text> -->
+					 <view v-html="formatStatus(dayPopupContent.dayNote)" class="placeholderText placeholderTexthide"></view>
+					 
 				 </view>
 			 </view>
 		 </view>
@@ -136,10 +140,11 @@
 						 <text class="placeholderTextGreen placeholderTexthide">{{moodPopupContent.tagidText}}</text>
 					</view>
 					<view class="cardNote">
-						<text v-html="moodPopupContent.moodNote" style="text-align: center; font:normal bold 30upx '宋体',arial,sans-serif; color: #448088;"></text>	
+						<view v-html="formatStatus(moodPopupContent.moodNote)"  style="text-align: center; font:normal bold 30upx '宋体',arial,sans-serif; color: #448088;"></view>
+						<!-- <text v-html="moodPopupContent.moodNote" style="text-align: center; font:normal bold 30upx '宋体',arial,sans-serif; color: #448088;"></text>	 -->
 					</view>
 					<view class="cardTime">
-						<text class="placeholderText placeholderTexthide">{{tmp}}</text>
+						<text class="placeholderText1 placeholderTexthide">{{tmp}}</text>
 					</view>
 				 </view>
 				
@@ -187,6 +192,7 @@
 					this.$store.commit("ChangedayRemind",res.data.recordRemindList)
 					this.$store.commit("ADDdayRemind",res.data.recordRemindList)
 					console.log(this.$store.state.dayRemindList)
+					
 					uni.request({
 						url:this.$url+'/record_moodBoom',
 						data:{
@@ -198,6 +204,13 @@
 							this.$store.commit("ChangemoodBoom",res.data.moodBoomList)
 							this.$store.commit("ADDmoodBoom",res.data.moodBoomList)
 							console.log(this.$store.state.moodBoomList)
+							for(var i=0; i<this.$store.state.moodBoomList.length; i++){
+								this.moodBoomList[i] = this.$store.state.moodBoomList[i]
+							}
+							for(var i=0; i<this.$store.state.dayRemindList.length; i++){
+								this.dayRemindList[i] = this.$store.state.dayRemindList[i]
+							}
+							
 						}
 					})
 					
@@ -205,6 +218,15 @@
 			})
 			
 		},
+		// onShow: function() {
+		// 	for(var i=0; i<this.$store.state.dayRemindList.length; i++){
+		// 		this.dayRemindList[i] = this.$store.state.dayRemindList[i]
+		// 	}
+		// 	for(var i=0; i<this.$store.state.moodBoomList.length; i++){
+		// 		this.moodBoomList[i] = this.$store.state.moodBoomList[i]
+		// 	}
+		// 	console.log('testtest')
+		// },
 		
 		
 		// components: {uniIcon},
@@ -212,6 +234,8 @@
 	    data() {
 			
 	        return {
+				moodBoomList:[],
+				dayRemindList:[],
 				whiteBgcControl:1,
 	            items: ['每日小结','情绪爆炸'],
 	            current: 0,
@@ -228,6 +252,9 @@
 	    },
 	// 弹出层入口开始-----------------------------------------------
 	    methods: {
+		formatStatus(index){
+			return index;
+		},
 			
 		Nav_historyCard(){
 			// var targetOption = dayPopupContent.targetOption

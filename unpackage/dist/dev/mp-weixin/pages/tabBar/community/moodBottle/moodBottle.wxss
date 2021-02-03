@@ -1,0 +1,82 @@
+
+.othersStory{
+	/* background-color: #007AFF; */
+	width: 370rpx;
+	height: 400rpx;
+	position: absolute;
+	left: 200rpx;
+	bottom: 550rpx;
+	z-index:1;
+	font: normal 34rpx "宋体",arial,sans-serif;
+	color: #448088;
+}
+.commNav{
+	width: 680rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	padding: 0 30rpx;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.paper{
+	width: 600rpx;
+	height: 720rpx;
+	padding: 80rpx 40rpx 0rpx 100rpx;
+	margin: 0 auto 30rpx;
+	position: relative;
+}
+/* 编辑板块 */
+.editArea{
+	background-color: rgb(241,250,254);
+	width: 500rpx;
+	height: 500rpx;
+	padding: 50rpx 50rpx 100rpx 50rpx;
+}
+.submitButton{
+	position: absolute;
+	bottom: 100rpx;
+	right: 120rpx;
+	width: 60rpx;
+	height: 60rpx;
+}
+.chooseTitle{
+	position: absolute;
+	bottom: 100rpx;
+	right: 460rpx;
+
+	/* background-color: #FFFFFF; */
+	/* border-radius: 20upx; */
+}
+.shareExp{
+	font:normal bold 50rpx "微软雅黑",arial,sans-serif;
+	color: #448088;
+}
+.listen{
+	font:normal bold 38rpx "宋体",arial,sans-serif;
+	color: #448088;
+}
+.commBottom{
+	width: 750rpx;
+	height: 157px;
+	background-color: rgb(245,249,250)
+}
+.bottom{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.bottom1{
+}
+

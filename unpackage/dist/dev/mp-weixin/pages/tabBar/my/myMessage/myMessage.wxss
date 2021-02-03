@@ -1,0 +1,65 @@
+
+.shareExp{
+	font:normal bold 50rpx "微软雅黑",arial,sans-serif;
+	color: #448088;
+}
+.communityText{
+	font:normal bold 40rpx "微软雅黑",arial,sans-serif;
+}
+.dayR_title1{
+	/* margin-left: 100upx; */
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	        flex: 3;
+}
+.Communitytotal{
+	/* background-color: #0066CC; */
+	width: 750rpx;
+	height: 865rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content:space-around;
+	        justify-content:space-around;
+}
+.Popcorn{
+	
+	width: 480rpx;
+	height: 160rpx;
+	margin: 0 auto;
+	background-color: rgb(254,241,216);
+	text-align: center;
+	line-height: 160rpx;
+}
+.Popcorn1{
+	
+	width: 480rpx;
+	height: 160rpx;
+	margin: 0 auto;
+	background-color: rgb(237, 231, 243);
+	text-align: center;
+	line-height: 160rpx;
+}
+.MoodBottle{
+	
+	width: 480rpx;
+	height: 160rpx;
+	margin: 0 auto;
+	background-color: rgb(237,246,255);
+	text-align: center;
+	line-height: 160rpx;
+}
+.NAJIHouse{
+	
+	width: 480rpx;
+	height: 160rpx;
+	margin: 0 auto;
+	background-color: rgb(253, 234, 230);
+	text-align: center;
+	line-height: 160rpx;
+}
+

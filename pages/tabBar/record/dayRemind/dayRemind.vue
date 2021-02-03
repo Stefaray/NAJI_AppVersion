@@ -108,6 +108,18 @@
 							<view class="perOption" :class="(targetOption5=='5')?'targetOption':''" @tap="chooseOption5" data-index="5"></view>
 						 </view>
 					</view>
+					<!-- <view class="question">
+						<view style="padding-left: 30upx;">
+							<text class="title">{{questions[5]}}</text>
+						</view>
+						<view class="options" >
+							<view class="perOption" :class="(targetOption5=='1')?'targetOption':''" @tap="chooseOption5" data-index="1"></view>
+							<view class="perOption" :class="(targetOption5=='2')?'targetOption':''" @tap="chooseOption5" data-index="2"></view>
+							<view class="perOption" :class="(targetOption5=='3')?'targetOption':''" @tap="chooseOption5" data-index="3"></view>
+							<view class="perOption" :class="(targetOption5=='4')?'targetOption':''" @tap="chooseOption5" data-index="4"></view>
+							<view class="perOption" :class="(targetOption5=='5')?'targetOption':''" @tap="chooseOption5" data-index="5"></view>
+						 </view>
+					</view> -->
 				</view>
 				
 			</view>
@@ -264,11 +276,12 @@
 				
 				questions :
 				[
-					'鹏宇哥哥超帅',
-					'鹏宇哥哥超强',
-					'鹏宇哥哥超幽默',
-					'鹏宇哥哥超可爱',
-					'鹏宇哥哥超有趣'
+					'我感觉今天对什么都不感兴趣',
+					'我觉得今天过度亢奋',
+					'我今天很少觉得紧张和着急',
+					'我感觉今天很有活力',
+					'我昨晚较快入睡且一天睡的很好',
+					'我感觉压力有点大'
 				]
 			}
 		},
@@ -370,17 +383,19 @@
 						if(res.data.new !=  ""){
 							if(res.data.status == -1 || res.data.status == 0)
 								this.$store.commit("UNSHIFTdayRemind",res.data.new[0])
-							uni.navigateBack({
-							    delta: 1
-							});
+							// uni.navigateBack({
+							//     delta: 1
+							// });
 						}
 						if(res.data.old != ""){
 							// console.log(res.data.old[0])
 							if(res.data.status == -1 || res.data.status == 0)
 								this.$store.commit("UPDATEdayRemind",res.data.old[0])
-							uni.navigateBack({
-							    delta: 1
-							});
+								
+							// uni.navigateBack({
+							//     delta: 1
+							// });
+							
 							// uni.switchTab({
 							// 	url:"/pages/tabBar/record/record"
 							// });
@@ -388,8 +403,11 @@
 							// 	url:"/pages/tabBar/record/record"
 							// })
 						}
-						
+						uni.navigateBack({
+						    delta: 1
+						});
 						this.$store.commit("ChangeNote1","")
+						
 						
 					},
 					
@@ -426,16 +444,12 @@
 		display: flex;
 	}
 	.picText .avatar{
-	    float:left;
-	    width:20%;
 		flex: 1;
 		display: flex;
 	    justify-content: center;
 	    align-items: center;
 	}
 	.picText .avatarText{
-	    float:right;
-	    width:80%;
 		flex: 3;
 		display: flex;
 	}

@@ -61,7 +61,7 @@
 					
 					<view class="highLikeTime_Like2">
 						<image src="../../../../static/community/happyPopcorn/star.svg" class="talkStar"></image>
-						<text class="likeCount">8888</text>
+						<text class="likeCount">1</text>
 					</view>
 				</view>
 			</view>

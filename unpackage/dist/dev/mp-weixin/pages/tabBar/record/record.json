@@ -1,6 +1,8 @@
 {
-  "navigationBarTitleText": "摇一摇",
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "记录",
   "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
     "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control"
   }
 }
